@@ -220,12 +220,59 @@ footer {
     font-size: .9rem
 }
 
-@media(max-width:880px) {
+@media (max-width: 1024px) {
+    .card {
+        max-width: 80%;
+    }
+    .title {
+        width: 80%;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
     .grid {
         flex-direction: column;
     }
 
     .wrap {
         padding: 0 8px;
+    }
+    .card, .vaccines {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .title {
+        width: 100%;
+        font-size: 0.93rem;
+    }
+    .logo img {
+        width: 80px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    header, .card, .vaccines, .logo {
+        padding: 8px 4px;
+    }
+    .card, .vaccines {
+        border-radius: 8px;
+    }
+    .logo img {
+        width: 60px;
+        padding: 4px;
+    }
+    .title {
+        font-size: 0.9rem;
+        padding: 8px 2px;
+    }
+    input, select, button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .baby-item, .v-item {
+        padding: 8px;
+        font-size: 0.95rem;
     }
 }
