@@ -221,6 +221,13 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    header {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 12px;
+    }
+
     .grid {
         display: block;
         flex-direction: column;
@@ -249,6 +256,7 @@ footer {
         flex-direction: column;
         gap: 12px;
     }
+
     .grid {
         flex-direction: column;
     }
