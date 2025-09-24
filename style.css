@@ -118,7 +118,7 @@ h1 {
 }
 
 .grid {
-    display: inline-flex;
+    display: flex;
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -222,6 +222,7 @@ footer {
 
 @media (max-width: 1024px) {
     .grid {
+
         flex-direction: column;
     }
     .wrap {
