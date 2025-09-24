@@ -234,6 +234,8 @@ footer {
     }
 
     .wrap {
+        align-items: center;
+        justify-content: center;
         padding: 0 12px;
     }
 
@@ -285,8 +287,19 @@ footer {
 }
 
 @media (max-width: 480px) {
+    header {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .grid {
+        flex-direction: column;
+    }
     header, .card, .vaccines, .logo {
+        display: block;
         padding: 8px 4px;
+
     }
 
     .card {
