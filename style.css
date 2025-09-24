@@ -88,13 +88,10 @@ h1 {
 
 .logo {
     display: flex;
-    width: 10%;
-    max-width: 100%;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
     background: var(--card);
-    padding: 14px;
+    padding: min(12px, 2vw) 14px;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(15, 23, 42, .06);
     transition: background .3s
@@ -109,17 +106,18 @@ h1 {
     padding: 10px;
 }
 .title {
-    background-color: red;
     width: 50%;
     text-align: center;
     display: block;
-    padding: 10px;
+    padding: min(12px, 2vw) 14px;
     font-size: 1rem;
     color: var(--text);
+    font-weight: 600;
+    margin: 0 auto;
 }
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 360px;
+    display: flex;
+    flex-wrap: wrap;
     gap: 14px
 }
 
