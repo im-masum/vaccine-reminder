@@ -9,7 +9,7 @@
     <meta name="description" content="শিশুদের টিকা শিডিউল সংরক্ষণ করুন এবং রিমাইন্ডার পেয়ে যান" />
     <meta name="keywords" content="শিশু,টিকা,রিমাইন্ডার,ভ্যাকসিন,শিশু টিকা,টিকা শিডিউল" />
     <meta name="author" content="MASUM" />
-        
+
 </head>
 
 <body>
@@ -18,86 +18,87 @@
             <div class="logo">
                 <img src="images/vaccine-img.png" alt="logo" />
             </div>
-                <div class="title">
+            <div class="title">
                 <h1>শিশু টিকা রিমাইন্ডার</h1>
                 <h3>টিকা শিডিউল সংরক্ষণ করুন, রিমাইন্ডার পেয়ে যান</h3>
             </div>
-        </div>
-        <button class="dark-toggle" id="darkModeBtn">🌙</button>
-        </header>
+            <button class="dark-toggle" id="darkModeBtn">🌙</button>
+    </div>
+    </header>
 
-        <div class="grid">
-            <section class="card">
-                <h2 style="margin:0 0 8px 0;font-size:1.05rem">শিশু যোগ করুন</h2>
-                <div style="display:grid;gap:8px">
-                    <div>
-                        <label>শিশুর নাম</label>
-                        <input id="babyName" placeholder="উদাহরণ: নূর আহমেদ" />
-                    </div>
-                    <div>
-                        <label>জন্ম তারিখ</label>
-                        <input id="babyDob" type="date" />
-                    </div>
-                    <div>
-                        <label>লিঙ্গ (ঐচ্ছিক)</label>
-                        <select id="babyGender">
-                            <option value="">চিহ্নিত করুন</option>
-                            <option value="male">ছেলে</option>
-                            <option value="female">মেয়ে</option>
-                        </select>
-                    </div>
-                    <div style="display:flex;gap:8px">
-                        <button id="addBaby" class="btn">শিশু যোগ করুন</button>
-                        <button id="clearAll" class="btn ghost">সব মুছুন</button>
-                    </div>
-                </div>
-
-                <div class="baby-list" id="babyList"></div>
-            </section>
-
-            <aside class="card">
-                <h3 style="margin:0 0 8px 0">শিডিউল ও রিমাইন্ডার</h3>
-                <div class="small" style="margin-bottom:8px;color:var(--muted)">নিচে একটি ডিফল্ট টিকা তালিকা আছে (আপনি
-                    পরিবর্তন করতে পারবেন)।</div>
-
+    <div class="grid">
+        <section class="card">
+            <h2 style="margin:0 0 8px 0;font-size:1.05rem">শিশু যোগ করুন</h2>
+            <div style="display:grid;gap:8px">
                 <div>
-                    <label>টিকা টেমপ্লেট</label>
-                    <select id="templateSelect">
-                        <option value="standard">ডিফল্ট (বেসিক)</option>
-                        <option value="bangladesh">Bangladesh EPI (উদাহরণ)</option>
+                    <label>শিশুর নাম</label>
+                    <input id="babyName" placeholder="উদাহরণ: নূর আহমেদ" />
+                </div>
+                <div>
+                    <label>জন্ম তারিখ</label>
+                    <input id="babyDob" type="date" />
+                </div>
+                <div>
+                    <label>লিঙ্গ (ঐচ্ছিক)</label>
+                    <select id="babyGender">
+                        <option value="">চিহ্নিত করুন</option>
+                        <option value="male">ছেলে</option>
+                        <option value="female">মেয়ে</option>
                     </select>
                 </div>
-
-                <div style="margin-top:10px">
-                    <label>কাস্টম টিকা যোগ করুন</label>
-                    <input id="customVaccineName" placeholder="টিকা নাম (যেমন: Rotavirus)" />
-                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
-                        <input id="customVaccineWeeks" placeholder="জন্মের কত সপ্তাহ পরে (সংখ্যা)" type="number" />
-                        <button id="addCustomVaccine" class="btn">যোগ করুন</button>
-                    </div>
+                <div style="display:flex;gap:8px">
+                    <button id="addBaby" class="btn">শিশু যোগ করুন</button>
+                    <button id="clearAll" class="btn ghost">সব মুছুন</button>
                 </div>
+            </div>
 
-                <hr style="margin:12px 0;border:none;border-top:1px solid #eef6fb" />
-                <div style="display:flex;gap:8px;margin-bottom:8px">
-                    <button id="notifyPerm" class="btn ghost">ব্রাউজার নোটিফিকেশন চালু</button>
-                    <button id="exportCsv" class="btn ghost">CSV এক্সপোর্ট</button>
-                </div>
-
-                <div style="font-size:.9rem;color:var(--muted)">নোট: নোটিফিকেশন কাজ করার জন্য ব্রাউজারে অনুমতি দিতে হবে
-                    এবং অ্যাপ খোলা থাকতে হবে।</div>
-            </aside>
-        </div>
-
-        <section class="card vaccines" id="vaccinesSection">
-            <h2 style="margin:0 0 8px 0">টিকা তালিকা</h2>
-            <div id="vaccineList"></div>
+            <div class="baby-list" id="babyList"></div>
         </section>
 
-        <footer>
-            এই অ্যাপটি কেবল রিমাইন্ডার সহায়তার জন্য। সঠিক টিকা শিডিউল জানতে স্থানীয় স্বাস্থ্যকেন্দ্রে যোগাযোগ করুন।
-        </footer>
+        <aside class="card">
+            <h3 style="margin:0 0 8px 0">শিডিউল ও রিমাইন্ডার</h3>
+            <div class="small" style="margin-bottom:8px;color:var(--muted)">নিচে একটি ডিফল্ট টিকা তালিকা আছে (আপনি
+                পরিবর্তন করতে পারবেন)।</div>
+
+            <div>
+                <label>টিকা টেমপ্লেট</label>
+                <select id="templateSelect">
+                    <option value="standard">ডিফল্ট (বেসিক)</option>
+                    <option value="bangladesh">Bangladesh EPI (উদাহরণ)</option>
+                </select>
+            </div>
+
+            <div style="margin-top:10px">
+                <label>কাস্টম টিকা যোগ করুন</label>
+                <input id="customVaccineName" placeholder="টিকা নাম (যেমন: Rotavirus)" />
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+                    <input id="customVaccineWeeks" placeholder="জন্মের কত সপ্তাহ পরে (সংখ্যা)" type="number" />
+                    <button id="addCustomVaccine" class="btn">যোগ করুন</button>
+                </div>
+            </div>
+
+            <hr style="margin:12px 0;border:none;border-top:1px solid #eef6fb" />
+            <div style="display:flex;gap:8px;margin-bottom:8px">
+                <button id="notifyPerm" class="btn ghost">ব্রাউজার নোটিফিকেশন চালু</button>
+                <button id="exportCsv" class="btn ghost">CSV এক্সপোর্ট</button>
+            </div>
+
+            <div style="font-size:.9rem;color:var(--muted)">নোট: নোটিফিকেশন কাজ করার জন্য ব্রাউজারে অনুমতি দিতে হবে
+                এবং অ্যাপ খোলা থাকতে হবে।</div>
+        </aside>
+    </div>
+
+    <section class="card vaccines" id="vaccinesSection">
+        <h2 style="margin:0 0 8px 0">টিকা তালিকা</h2>
+        <div id="vaccineList"></div>
+    </section>
+
+    <footer>
+        এই অ্যাপটি কেবল রিমাইন্ডার সহায়তার জন্য। সঠিক টিকা শিডিউল জানতে স্থানীয় স্বাস্থ্যকেন্দ্রে যোগাযোগ করুন।
+    </footer>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
