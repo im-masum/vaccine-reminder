@@ -222,10 +222,10 @@ footer {
 
 @media(max-width:880px) {
     .grid {
-        grid-template-columns: 1fr
+        flex-direction: column;
     }
 
     .wrap {
-        padding: 8px
+        padding: 0 8px;
     }
 }
