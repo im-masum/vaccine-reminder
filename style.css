@@ -203,6 +203,14 @@ button:hover {
     text-decoration: line-through;
     opacity: .6
 }
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+}
 
 .btn {
     background: var(--accent);
@@ -213,13 +221,20 @@ button:hover {
     cursor: pointer;
     transition: background .3s
 }
+.btn:hover {
+    background: #0c4a4a;
+}
 
 .btn.ghost {
     background: transparent;
     color: var(--accent);
     border: 1px solid rgba(14, 165, 164, .14)
 }
-
+.btn.ghost:hover {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+}
 footer {
     margin-top: 16px;
     text-align: center;
