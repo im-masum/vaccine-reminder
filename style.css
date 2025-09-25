@@ -137,12 +137,19 @@ input,
 select,
 button {
     width: 100%;
-    padding: 10px;
+    padding: min(10px, 2vw) 14px;
     border: 1px solid #e6eef6;
     border-radius: 8px;
     font-size: 0.95rem;
     background: var(--bg);
-    color: var(--text)
+    color: var(--text);
+    cursor: pointer;
+    transition: border .3s, background .3s, color .3s;
+}
+button:hover {
+    background: var(--accent);
+    color: #fff;
+    border: none;
 }
 
 .small {
@@ -188,9 +195,9 @@ button {
     transition: background .3s
 }
 
-body.dark .v-item {
+/* body.dark .v-item {
     background: #1e293b
-}
+} */
 
 .done {
     text-decoration: line-through;
