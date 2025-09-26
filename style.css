@@ -99,10 +99,10 @@ h1 {
 
 
 .logo img {
-    width: 100px;
-    object-fit: contain;
+    width: 200px;
+    height: 100px;
     border-radius: 8px;
-    background: #e0e7ff;
+    background: var(--accent);
     padding: 10px;
 }
 
@@ -195,14 +195,11 @@ button:hover {
     transition: background .3s
 }
 
-/* body.dark .v-item {
-    background: #1e293b
-} */
-
 .done {
     text-decoration: line-through;
     opacity: .6
 }
+
 .btn-group {
     display: flex;
     align-items: center;
