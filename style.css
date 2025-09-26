@@ -233,12 +233,21 @@ button:hover {
     border: none;
 }
 footer {
-    margin-top: 16px;
+    margin: 20px 0px;
     text-align: center;
     color: var(--muted);
-    font-size: .9rem
+    font-size: .9rem;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #0ea5a4, #3b82f6);
+    padding-top: 12px;
+    border-radius: 8px;
+    padding: min(12px, 2vw) 14px;
 }
-
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600
+}
 @media (max-width: 1024px) {
     header {
         align-items: center;
