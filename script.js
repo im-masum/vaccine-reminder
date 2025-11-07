@@ -143,3 +143,4 @@
         function changeTemplate() {
             const t = $('templateSelect').value; state.template = t; save(); renderAll();
         }
+        
